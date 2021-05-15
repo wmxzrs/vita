@@ -1,8 +1,0 @@
-{
-    "bump": {
-        "options": {
-            "files": ["package.json", "bower.json", "app/prod.config.cson", "app/dev.config.cson", "app/config.cson.dist"],
-            "commitFiles": ["package.json", "bower.json", "app/prod.config.cson", "app/dev.config.cson", "app/config.cson.dist", "CHANGELOG.md"]
-        }
-    }
-}
