@@ -3,7 +3,7 @@
   height:70vh;
   position: relative;
   /* background:url('') no-repeat 5% 60%; */
-  background-color:transparent;
+  background-color:#fff;
 }
 .navi-button {
     font-size: .8rem;
