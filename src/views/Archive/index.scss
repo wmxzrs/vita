@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #archive {
   .page {
     padding: 16px 0;
@@ -5,3 +6,12 @@
     @include card-page;
   }
 }
+=======
+#archive {
+  .page {
+    padding: 16px 0;
+    overflow: hidden;
+    @include card-page;
+  }
+}
+>>>>>>> 09fc29a01cc37279c08306fc328fe3733f559db1
