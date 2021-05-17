@@ -40,10 +40,10 @@ export default {
   /**
    * leancloud 配置 【注意切换为国际版】
    */
-  leancloud: {
-    appId: 'LjOwR4ELEqbauKvtQbwq5TUw-MdYXbMMI',
-    appKey: 'BOSFJ49ohbGctgn4zvJE9VN6',
-  },
+  // leancloud: {
+  //   appId: 'LjOwR4ELEqbauKvtQbwq5TUw-MdYXbMMI',
+  //   appKey: 'BOSFJ49ohbGctgn4zvJE9VN6',
+  // },
 
   /**
    * =========================================================
@@ -55,7 +55,7 @@ export default {
    * 归档页面
    */
   archiveOpts: {
-    display: true, // 是否显示该页面
+    display: false, // 是否显示该页面
     enableComment: false, // 是否开启评论功能
     qoute: '華枝春滿 天心月圓', // 页面顶部一言
   },
@@ -64,7 +64,7 @@ export default {
    * 分类页面
    */
   categoryOpts: {
-    display: true,
+    display: false,
     enableComment: false,
     qoute: '桜華月想 暮色蒼然',
   },
@@ -75,14 +75,14 @@ export default {
   tagOpts: {
     display: true,
     enableComment: false,
-    qoute: '灯笼流丽，百鬼夜行',
+    qoute: '',
   },
 
   /**
    * 灵感页面
    */
   inspirationOpts: {
-    display: true,
+    display: false,
     enableComment: true,
     qoute: '詠奏妖華，明鏡止水',
   },
@@ -109,7 +109,7 @@ export default {
    * 关于页面
    */
   aboutOpts: {
-    display: true,
+    display: false,
     enableComment: true,
     qoute: '蝉鸣如雨，花宵道中',
     avatar: '//cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg',
@@ -162,16 +162,16 @@ export default {
   /**
    * 赛钱箱
    */
-  qrcode: [
-    {
-      name: '支付宝',
-      img: '//cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/zfb.png',
-    },
-    {
-      name: '微信',
-      img: '//cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/wx.png',
-    },
-  ],
+  // qrcode: [
+  //   {
+  //     name: '支付宝',
+  //     img: '//cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/zfb.png',
+  //   },
+  //   {
+  //     name: '微信',
+  //     img: '//cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/wx.png',
+  //   },
+  // ],
 
   /**
    * 音乐播放器,
