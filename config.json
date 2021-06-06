@@ -4,14 +4,15 @@
     "client_id": "da12701670064b56987f",
     "client_secret": "a95a65739c5eb89426b7019c2740f56693598916",
     "title": "Gitblog",
-    "instruction": "简单的微博",
+    "instruction": "当一艘船沉入海底，当一个人成了谜",
     "server_link": "http://119.23.8.25/gh-oauth-server.php",
     "filter": {
         "creator": "all",
         "state": "all"
     },
     "menu": {
-        "首页":"./"
+        "首页":"./",
+        "主页":"https://vitadaemon.com"
     },
     "friends": {
         "imuncle" : "https://imuncle.github.io"
