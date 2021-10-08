@@ -35,6 +35,10 @@
           <div id="content" class="gitment-markdown" style="margin-top:50px;margin-bottom: 50px">内容加载中...</div>
           <div class="post-tags" id="labels"></div>
           <hr>
+
+          <div id="gitalk-container"></div>  
+          <!-- 添加 -->
+
           <div lang="zh-CN" class="gitment-container gitment-header-container">
             <span><strong id="comments-num"></strong> 条评论</span>
           </div>
@@ -92,6 +96,21 @@
       setInterval(function() {
         MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
       }, 500);
-    })()
+    })();
+    var gitalk = new Gitalk({
+  clientID: 'da12701670064b56987f',
+  // GitHub Application Client ID
+  clientSecret: 'a95a65739c5eb89426b7019c2740f56693598916',
+  // GitHub Application Client Secret
+  repo: 'vita',
+  owner: 'wmxzrs',
+  admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
+
   </script>
+  
 </html>
