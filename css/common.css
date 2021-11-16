@@ -1,7 +1,7 @@
 .footer {
-    background: #2c3e50;
+    background: #fcf8e3;
     padding: 50px 15px;
-    width: 100%;
+    width: 80%;
     bottom:0;
 }
 .navi-button {
@@ -19,7 +19,7 @@
     text-transform: uppercase;
     z-index: 99;
     transform: translateX(0);
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 .main-navication li {
     list-style: none;
