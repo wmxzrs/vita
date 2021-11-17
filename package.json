@@ -1,0 +1,22 @@
+{
+  "name": "vita",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmxzrs/vita.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wmxzrs/vita/issues"
+  },
+  "homepage": "https://github.com/wmxzrs/vita#readme",
+  "dependencies": {
+    "create-react-app": "^4.0.3"
+  }
+}
