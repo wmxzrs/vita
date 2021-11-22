@@ -77,7 +77,7 @@ var api = function(config) {
                 headers: {
                     Accept: 'application/vnd.github.squirrel-girl-preview, application/vnd.github.html+json, application/x-www-form-urlencoded',
                 },
-                url: 'https://' + config.name + ':' + config.token + 'api.github.com/repos/' + config.name + '/' + config.repo + '/issues/' + self.options.id,
+                url: 'https://api.github.com/repos/' + config.name + '/' + config.repo + '/issues/' + self.options.id,
                 success: function(data) {
                     self.info.title = data.title;
                     self.info.time = self.utc2localTime(data.created_at);
