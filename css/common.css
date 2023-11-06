@@ -1,8 +1,8 @@
 .footer {
     background: #2c3e50;
-    padding: 50px 15px;
-    width: 100%;
-    bottom:0;
+    padding: 60px 50px;
+    width: 50%;
+    bottom:5%;
 }
 .navi-button {
     font-size: .8rem;
