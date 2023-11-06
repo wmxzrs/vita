@@ -7,7 +7,8 @@
     height: 10%;
     bottom:5%;
     border-radius: 10%;
-    background-color: #f2e5e4
+    background-color: #f2e5e4;
+    opacity: 50%
 }
 .navi-button {
     font-size: .8rem;
