@@ -6,6 +6,7 @@
     width: 40%;
     height: 10%;
     bottom:5%;
+    border-radius: 50%
 }
 .navi-button {
     font-size: .8rem;
