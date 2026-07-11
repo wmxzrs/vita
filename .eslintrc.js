@@ -7,6 +7,8 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-unused-vars': 'warn',
     'vue/multi-word-component-names': 'off',
+    'vue/no-reserved-component-names': 'off',
+    'no-case-declarations': 'off',
   },
   parserOptions: {
     parser: '@babel/eslint-parser',
