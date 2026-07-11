@@ -5,8 +5,8 @@ module.exports = {
     loaderOptions: {
       sass: {
         additionalData: `
-          @use "~@/styles/variables.scss" as *;
-          @use "~@/styles/mixin.scss" as *;
+          @import "~@/styles/variables.scss";
+          @import "~@/styles/mixin.scss";
         `,
         sassOptions: {
           silenceDeprecations: ['legacy-js-api'],
