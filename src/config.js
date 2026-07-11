@@ -22,17 +22,17 @@ export default {
    */
   username: 'wmxzrs', // github 用户名
   repository: 'vita', // 文章仓库地址
-  token: ['ghp_ShAnoDfdOr6pxPJw', 'L6dmvl80JaZdmK41kLZy'], // token 从中间任意位置拆开成两部分，避免 github 代码检测失效
+  token: process.env.VUE_APP_GITHUB_TOKEN ? [process.env.VUE_APP_GITHUB_TOKEN.slice(0, 20), process.env.VUE_APP_GITHUB_TOKEN.slice(20)] : [],
 
   /**
    * Gitalk 配置，文档详见：https://github.com/gitalk/gitalk
    */
   gitalk: {
-    clientID: '864b1c2cbc4e4aad9ed8',
-    clientSecret: '6ca16373efa03347e11a96ff92e355c5cea189bb',
-    repo: 'comment', // 评论仓库地址
-    owner: 'chanshiyucx',
-    admin: ['chanshiyucx'],
+    clientID: process.env.VUE_APP_GITALK_CLIENT_ID || '',
+    clientSecret: process.env.VUE_APP_GITALK_CLIENT_SECRET || '',
+    repo: 'comment',
+    owner: 'wmxzrs',
+    admin: ['wmxzrs'],
     distractionFreeMode: false, // 是否开始无干扰模式【背景遮罩】
     proxy: 'https://bokegitalkcors.herokuapp.com/https://github.com/login/oauth/access_token',
   },
@@ -41,8 +41,8 @@ export default {
    * leancloud 配置 【注意切换为国际版】
    */
   // leancloud: {
-  //   appId: 'LjOwR4ELEqbauKvtQbwq5TUw-MdYXbMMI',
-  //   appKey: 'BOSFJ49ohbGctgn4zvJE9VN6',
+  //   appId: process.env.VUE_APP_LEANCLOUD_APP_ID || '',
+  //   appKey: process.env.VUE_APP_LEANCLOUD_APP_KEY || '',
   // },
 
   /**

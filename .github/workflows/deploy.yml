@@ -1,0 +1,36 @@
+name: Deploy Vita
+
+on:
+  push:
+    branches: [denv]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          VUE_APP_GITHUB_TOKEN: ${{ secrets.VUE_APP_GITHUB_TOKEN }}
+          VUE_APP_GITALK_CLIENT_ID: ${{ secrets.VUE_APP_GITALK_CLIENT_ID }}
+          VUE_APP_GITALK_CLIENT_SECRET: ${{ secrets.VUE_APP_GITALK_CLIENT_SECRET }}
+
+      - name: Deploy to Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
